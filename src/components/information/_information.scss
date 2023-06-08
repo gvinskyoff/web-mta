@@ -18,12 +18,12 @@
     .mta_info_row {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 40px;
     }
 
     .mta_info_col {
         flex: 0 0 auto;
-        width: calc(50% - 10px);
+        width: calc(50% - 20px);
     }
 
     .mta_info_content_number {
