@@ -1,0 +1,33 @@
+.mta_footer {
+    padding: 20px 0;
+
+    background-color: #000000;
+
+    border-top: 1px solid;
+    border-radius: 25% 25% 0 0;
+    border-color: rgba($color: #FFFFFF, $alpha: 0.1);
+
+    color: #FFFFFF;
+
+    .mta_footer_content {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .mta_footer_text {
+            font-weight: 400;
+            font-size: 1rem;
+
+            color: #FFFFFF;
+            
+            a {
+                font-weight: inherit;
+                font-size: inherit;
+    
+                color: inherit;
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.mta_info {
+    padding: 50px 0;
+
+    background-color: #000000;
+
+    color: #FFFFFF;
+
+    .mta_order_1 {
+        order: 1;
+    }
+
+    .mta_info_column {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .mta_info_row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .mta_info_col {
+        flex: 0 0 auto;
+        width: calc(50% - 10px);
+    }
+
+    .mta_info_content_number {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-weight: 600;
+        font-size: 4rem;
+
+        color: rgba($color: #FFFFFF, $alpha: 0.5);
+    }
+
+    .mta_info_content_image {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 280px;
+
+            border-radius: 0.5rem;
+
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    .mta_info_content_descr {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+
+        h1 {
+            font-weight: 500;
+            font-size: 2rem;
+
+            color: #FFFFFF;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1rem;
+
+            line-height: 1.6rem;
+
+            color: #FFFFFF;
+
+            a {
+                font-weight: inherit;
+                font-size: inherit;
+
+                color: inherit;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .mta_info {
+        .mta_order_1 {
+            order: 0;
+        }
+
+        .mta_info_row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mta_info_col {
+            width: 70%;
+        }
+
+        .mta_info_content_descr {
+            align-items: center;
+
+            h1 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .mta_info {
+        .mta_info_row {
+            flex-direction: column;
+        }
+
+        .mta_info_col {
+            width: 100%;
+        }
+    }    
+}
+
+@media screen and (max-width: 450px) {
+    .mta_info {
+        .mta_info_content_image {
+            img {
+                height: 220px;
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.mta_header {
+    padding: 20px 0;
+
+    background-color: #000000;
+
+    border-bottom: 1px solid;
+    border-color: rgba($color: #FFFFFF, $alpha: 0.1);
+
+    color: #FFFFFF;
+
+    .mta_header_content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .mta_header_brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .mta_header_brand_img_logo {
+                width: 42px;
+                height: 42px;
+
+                object-fit: cover;
+                object-position: center center;
+            }
+
+            .mta_header_brand_desc {
+                display: flex;
+                flex-direction: column;
+
+                .mta_header_brand_logo {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+        
+                    color: #FFFFFF;
+        
+                    text-decoration: none;
+                }
+    
+                .mta_header_brand_text {
+                    font-weight: 400;
+                    font-size: 0.8rem;
+        
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .mta_header_nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.2rem;
+
+            .mta_header_nav_link {
+                padding: 5px 15px;
+
+                -webkit-backdrop-filter: blur(1rem);
+                backdrop-filter: blur(1rem);
+
+                border: 1px solid;
+                border-radius: 0 0 0 0;
+                border-color: rgba($color: #FFFFFF, $alpha: 0.1);
+
+                font-weight: 400;
+                font-size: 1rem;
+
+                color: #FFFFFF;
+
+                text-decoration: none;
+                transition: 0.2s ease;
+
+                &:first-child {
+                    border-radius: 0.5rem 0 0 0.5rem;
+                }
+
+                &:last-child {
+                    border-radius: 0 0.5rem 0.5rem 0;
+                }
+
+                &:hover {
+                    border-color: #FFFFFF;
+                }
+            }
+        }   
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .mta_header {
+        .mta_header_content {
+            justify-content: center;
+            gap: 1rem;
+
+            .mta_header_brand {
+                .mta_header_brand_img_logo {
+                    display: none;
+                }
+
+                .mta_header_brand_desc {
+                    align-items: center;
+                }
+            }
+
+            .mta_header_nav {
+                justify-content: center;
+
+                .mta_header_nav_link {
+                    border-radius: 0.5rem;
+
+                    &:first-child {
+                        border-radius: 0.5rem;
+                    }
+    
+                    &:last-child {
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mta_header {
+        .mta_header_content {
+            .mta_header_nav {
+                display: none;
+            }
+        }
+    }
+}
